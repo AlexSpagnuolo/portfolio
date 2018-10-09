@@ -1,0 +1,60 @@
+html {
+  font-family: "Roboto Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: #231f20;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #231f20;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+}
+
+.navlink:hover,
+.navlink:focus {
+  border-bottom: 2px solid #b59e5f;
+  padding-bottom: 3px;
+}
+
+.navlogo path {
+  color: #231f20;
+  transition: all .3s ease;
+}
+
+.navlogo:hover path {
+  fill: #231f20;
+}
+
+.nameh1,
+.nameh2 {
+  line-height: 100%;
+}
+
+.projectname {
+  bottom: -1.6em;
+  left: 2em;
+  transition: all .3s ease;
+}
+
+.nameh2 {
+  color: #fff;
+  -webkit-text-stroke: 2px #231f20;
+  transform: scale(1, -1);
+  transition: all .3s ease;
+}
+
+.nameh2:hover,
+.nameh2:focus {
+  color: #231f20;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
+}
+
+.portfoliopiece:hover .projectname {
+  transform: translateX(-15px);
+  color: rgba(0, 0, 0, 0);
+}
