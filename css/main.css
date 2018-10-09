@@ -1,10 +1,20 @@
 html {
   font-family: "Roboto Mono", monospace;
+  color: #231f20;
 }
 
 a {
   text-decoration: none;
   color: #231f20;
+}
+
+.rolelink {
+  text-decoration: underline;
+}
+
+.rolelink:hover,
+.rolelink:focus {
+  text-decoration: none;
 }
 
 .navlink {
@@ -21,6 +31,20 @@ a {
   padding-bottom: 3px;
 }
 
+.navlinkwhite {
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+}
+
+.navlinkwhite:hover,
+.navlinkwhite:focus {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 3px;
+}
+
 .navlogo path {
   color: #231f20;
   transition: all .3s ease;
@@ -28,6 +52,15 @@ a {
 
 .navlogo:hover path {
   fill: #231f20;
+}
+
+.navlogowhite path {
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.navlogowhite:hover path {
+  fill: #fff;
 }
 
 .nameh1,
@@ -41,8 +74,13 @@ a {
   transition: all .3s ease;
 }
 
+.caption {
+  bottom: -2em;
+  left: 3em;
+}
+
 .nameh2 {
-  color: #fff;
+  color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 2px #231f20;
   transform: scale(1, -1);
   transition: all .3s ease;
@@ -57,4 +95,20 @@ a {
 .portfoliopiece:hover .projectname {
   transform: translateX(-15px);
   color: rgba(0, 0, 0, 0);
+}
+
+.gumheader, .gumfooter {
+  background-color: #005B9C;
+}
+
+.imgleft {
+  padding-right: 5em
+}
+
+.imgright {
+  padding-left: 5em
+}
+
+.colourfootertitle {
+  transform: translateY(-1em);
 }
