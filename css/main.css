@@ -72,6 +72,15 @@ a {
   bottom: -1.6em;
   left: 2em;
   transition: all .3s ease;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
+}
+
+.projectdesc {
+  visibility: hidden;
+  transition: all .3s ease;
+  color: rgba(0, 0, 0, 0);
+  bottom: 0;
+  left: 2em;
 }
 
 .caption {
@@ -95,6 +104,12 @@ a {
 .portfoliopiece:hover .projectname {
   transform: translateX(-15px);
   color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1.5px #231f20;
+}
+
+.portfoliopiece:hover .projectdesc {
+  visibility: visible;
+  color: #231f20;
 }
 
 .gumheader, .gumfooter {
@@ -111,4 +126,41 @@ a {
 
 .colourfootertitle {
   transform: translateY(-1em);
+}
+
+.outline {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px #231f20;
+}
+
+.i-btn {
+    transition: all .3s ease;
+}
+
+.i-btn:focus,
+.i-btn:hover {
+  transform: scale(.9);
+}
+
+.me {
+  width: 70%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.icons {
+  width: 50%;
+  margin: auto;
+}
+
+.email {
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: border .3s ease;
+  color: #b59e5f;
+}
+
+.email:focus,
+.email:hover {
+  border-bottom: 2px solid #b59e5f;
 }
