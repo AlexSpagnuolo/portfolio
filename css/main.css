@@ -63,6 +63,10 @@ a {
   fill: #fff;
 }
 
+.navlogowhitefill {
+  fill: #fff;
+}
+
 .nameh1,
 .nameh2 {
   line-height: 100%;
@@ -114,6 +118,10 @@ a {
 
 .gumheader, .gumfooter {
   background-color: #005B9C;
+}
+
+.newmoonheader, .newmoonfooter {
+  background-color: #7b6991;
 }
 
 .imgleft {
