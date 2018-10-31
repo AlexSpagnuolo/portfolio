@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>http://aaspagnuolo.ca</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/about</loc>
+    <priority>1.0</priority>
+
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/lookmore</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/packaging</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/rebrand</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/finalannualreport</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/exhibit2</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://aaspagnuolo.ca/lotbot</loc>
+    <priority>1.0</priority>
+  </url>

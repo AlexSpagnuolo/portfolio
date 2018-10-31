@@ -1,0 +1,3 @@
+Sitemap: http://aaspagnuolo.ca/sitemap.xml
+
+User-Agent: *
