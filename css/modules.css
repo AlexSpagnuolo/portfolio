@@ -796,8 +796,6 @@ textarea {
   background-color: #fff;
   border: 2px solid #666;
   border-radius: 0;
-
-  vertical-align: middle;
 }
 
 label {
@@ -1004,6 +1002,8 @@ select {
   text-decoration: none;
 }
 
+/* stylelint-disable no-descending-specificity */
+
 button,
 .btn {
   cursor: pointer;
@@ -1027,6 +1027,8 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+/* stylelint-enable */
 
 button:focus,
 button:hover,
@@ -1196,6 +1198,66 @@ a:focus, [tabindex="0"]:focus {
   }
 
   /*
+   * (c) Fabien Sa || MIT License
+   *     http://bafs.github.io/Gutenberg/
+   */
+
+  table,
+  blockquote,
+  pre,
+  code,
+  figure,
+  li,
+  hr,
+  ul,
+  ol,
+  a,
+  tr {
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1 + p,
+  h2 + p,
+  h3 + p,
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    page-break-before: avoid;
+  }
+
+  img {
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
+  /* stylelint-disable declaration-no-important */
+
+  pre {
+    white-space: pre-wrap !important;
+    word-wrap: break-word;
+  }
+
+  /* stylelint-enable */
+
+  /* End Gutenberg code */
+
+  /*
    * (c) HTML5 Boilerplate || MIT License
    *     https://html5boilerplate.com/
    */
@@ -1230,26 +1292,10 @@ a:focus, [tabindex="0"]:focus {
     content: "";
   }
 
-  pre, blockquote {
-    page-break-inside: avoid;
-  }
-
   thead {
     display: table-header-group;
   }
 
-  tr, img {
-    page-break-inside: avoid;
-  }
-
-  p, h1, h2, h3, h4, h5, h6 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    page-break-after: avoid;
-  }
-
   /* End HTML5 Boilerplate code */
+
 }
