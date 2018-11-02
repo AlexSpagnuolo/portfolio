@@ -8,36 +8,28 @@
 
   <url>
     <loc>http://aaspagnuolo.ca/about</loc>
-    <priority>1.0</priority>
-
   </url>
 
   <url>
-    <loc>http://aaspagnuolo.ca/lookmore</loc>
-    <priority>1.0</priority>
+    <loc>http://aaspagnuolo.ca/more-work</loc>
   </url>
 
   <url>
-    <loc>http://aaspagnuolo.ca/packaging</loc>
-    <priority>1.0</priority>
+    <loc>http://aaspagnuolo.ca/gum-packaging</loc>
   </url>
 
   <url>
-    <loc>http://aaspagnuolo.ca/rebrand</loc>
-    <priority>1.0</priority>
+    <loc>http://aaspagnuolo.ca/roz-ross</loc>
   </url>
 
   <url>
-    <loc>http://aaspagnuolo.ca/finalannualreport</loc>
-    <priority>1.0</priority>
+    <loc>http://aaspagnuolo.ca/parlour-rebrand</loc>
   </url>
 
   <url>
-    <loc>http://aaspagnuolo.ca/exhibit2</loc>
-    <priority>1.0</priority>
+    <loc>http://aaspagnuolo.ca/final-annual-report</loc>
   </url>
 
   <url>
     <loc>http://aaspagnuolo.ca/lotbot</loc>
-    <priority>1.0</priority>
   </url>
