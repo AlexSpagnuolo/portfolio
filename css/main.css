@@ -50,6 +50,17 @@ a {
   transition: all .3s ease;
 }
 
+.current {
+  border-bottom: 2px solid #b59e5f;
+  padding-bottom: 3px;
+}
+
+.current:hover,
+.current:focus {
+  border-bottom: 3px solid rgba(0, 0, 0, 0);
+  padding-bottom: 0px;
+}
+
 .navlogo:hover path {
   fill: #231f20;
 }
@@ -72,26 +83,6 @@ a {
   line-height: 100%;
 }
 
-.projectname {
-  bottom: -1.6em;
-  left: 2em;
-  transition: all .3s ease;
-  -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
-}
-
-.projectdesc {
-  visibility: hidden;
-  transition: all .3s ease;
-  color: rgba(0, 0, 0, 0);
-  bottom: 0;
-  left: 2em;
-}
-
-.caption {
-  bottom: -2em;
-  left: 3em;
-}
-
 .nameh2 {
   color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 2px #231f20;
@@ -105,15 +96,89 @@ a {
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
 }
 
-.portfoliopiece:hover .projectname {
-  transform: translateX(-15px);
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1.5px #231f20;
+.caption {
+  bottom: -2em;
+  left: 3em;
 }
 
-.portfoliopiece:hover .projectdesc {
-  visibility: visible;
-  color: #231f20;
+.projectname {
+  bottom: -1.6em;
+  left: 2em;
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
+}
+
+.projectdetails {
+  color: #fff;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: all .3s ease;
+  transition-delay: .3s;
+  display: none;
+  visibility: hidden;
+}
+
+.gumprojectdetails {
+  background-color: #005B9C;
+}
+
+.gum-odd-li {
+  background-color: #005089;
+}
+
+.rozrossprojectdetails {
+  background-color: #5BB4B5;
+}
+
+.rozross-odd-li {
+  background-color: #4c9899;
+}
+
+.parlourrebrandprojectdetails {
+  background-color: #7b6991;
+}
+
+.parlourrebrand-odd-li {
+  background-color: #6a5b7c;
+}
+
+.finalreportprojectdetails {
+  background-color: #ed7323;
+}
+
+.finalreport-odd-li {
+  background-color: #d3651d;
+}
+
+.lotbotprojectdetails {
+  background-color: #F9C33D;
+}
+
+.lotbot-odd-li {
+  background-color: #FBB03B;
+}
+
+.portfoliopiece {
+  transition: all .3s ease;
+}
+
+.portfoliopiece:hover,
+.portfoliopiece:focus {
+  transform: scale(0.97);
+}
+
+.portfoliopiece:hover .projectdetails {
+  right: -21%;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .projectdetails {
+    display: inline-block;
+    visibility: visible;
+  }
+
 }
 
 .gumheader, .gumfooter {
@@ -138,7 +203,7 @@ a {
 
 .outline {
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 2px #231f20;
+  -webkit-text-: 2px #231f20;
 }
 
 .i-btn {
