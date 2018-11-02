@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="{{site.baseurl}}/css/modules.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
@@ -10,6 +11,11 @@
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
   <link type="text/plain" rel="author" href="http://aaspagnuolo.ca/humans.txt"/>
+
+  <meta name="ICBM" content="45.416667,-75.7">
+  <meta name="geo.position" content="45.416667;-75.7">
+  <meta name="geo.region" content="ca-on">
+  <meta name="geo.placename" content="Ottawa">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,10 +30,10 @@
     <nav class="pad-t pad-b push">
       <ul class="list-group-inline text-center push-0">
         <li class="gutter">
-          <a class="bold milli navlink {{page.navlinkclass}}" href="{{site.baseurl}}/about/">ABOUT</a>
+          <a href="{{site.baseurl}}/about/" {% if page.url == '/about/' %} class="current bold milli navlink {{page.navlinkclass}}" rel="me" {% endif %} class="bold milli navlink {{page.navlinkclass}}" rel="me">ABOUT ME</a>
         </li>
         <li class="gutter">
-          <a href="{{site.baseurl}}/">
+          <a href="{{site.baseurl}}/" rel="home">
             <i class="icon i-btn i-48">
               <svg class="navlogo {{page.navlogoclass}}" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
                 <path class="logoafill {{page.navlogotopclass}}" d="m0 0v450h125v-175h200v175h125v-450zm325 175h-200v-50h200z" fill="#231f20"/>
@@ -41,7 +47,7 @@
           </a>
         </li>
         <li class="gutter">
-          <a class="bold milli navlink {{page.navlinkclass}}" href="{{site.baseurl}}/lookbooks/">LOOKBOOKS</a>
+          <a href="{{site.baseurl}}/more-work/" {% if page.url == '/more-work/' %} class="current bold milli navlink {{page.navlinkclass}}" {% endif %} class="bold milli navlink {{page.navlinkclass}}">LOOK MORE</a>
         </li>
       </ul>
     </nav>
