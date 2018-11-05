@@ -9,12 +9,14 @@ a {
 }
 
 .rolelink {
-  text-decoration: underline;
+  border-bottom: 1.5px solid #231f20;
+  transition: all .3s ease;
 }
 
 .rolelink:hover,
 .rolelink:focus {
-  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  padding-bottom: 1px;
 }
 
 .navlink {
@@ -119,7 +121,9 @@ a {
   visibility: hidden;
 }
 
-.gumprojectdetails {
+.gumprojectdetails,
+.gumheader,
+.gumfooter {
   background-color: #005B9C;
 }
 
@@ -127,7 +131,9 @@ a {
   background-color: #005089;
 }
 
-.rozrossprojectdetails {
+.rozrossprojectdetails,
+.rozrossheader,
+.rozrossfooter {
   background-color: #5BB4B5;
 }
 
@@ -135,7 +141,9 @@ a {
   background-color: #4c9899;
 }
 
-.parlourrebrandprojectdetails {
+.parlourrebrandprojectdetails,
+.newmoonheader,
+.newmoonfooter {
   background-color: #7b6991;
 }
 
@@ -143,7 +151,9 @@ a {
   background-color: #6a5b7c;
 }
 
-.finalreportprojectdetails {
+.finalreportprojectdetails,
+.finalannualreportheader,
+.finalannualreportfooter {
   background-color: #ed7323;
 }
 
@@ -151,7 +161,9 @@ a {
   background-color: #d3651d;
 }
 
-.lotbotprojectdetails {
+.lotbotprojectdetails,
+.lotbotheader,
+.lotbotfooter {
   background-color: #F9C33D;
 }
 
@@ -179,14 +191,6 @@ a {
     visibility: visible;
   }
 
-}
-
-.gumheader, .gumfooter {
-  background-color: #005B9C;
-}
-
-.newmoonheader, .newmoonfooter {
-  background-color: #7b6991;
 }
 
 .imgleft {
