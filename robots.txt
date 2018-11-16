@@ -1,3 +1,7 @@
+# www.rozross.ca
+
+
 Sitemap: http://aaspagnuolo.ca/sitemap.xml
 
 User-Agent: *
+Disallow:
