@@ -1,3 +1,5 @@
+#humanstxt.org
+
 # TEAM
 
 Designer & Developer: Alex Spagnuolo <a_spagnuolo@icloud.com>
@@ -7,3 +9,19 @@ Vimeo: https://vimeo.com/aaspagnuolo
 LinkedIn: https://www.linkedin.com/in/aaspagnuolo/
 GitHub: https://github.com/AlexSpagnuolo
 Location: Ottawa, Canada
+
+---
+
+# THANKS
+
+- "Gridifier" by Thomas J Bradley
+  Code released under the UNLICENSE
+  https://gridifier.web-dev.tools/
+
+- "Modulifier" by Thomas J Bradley
+  Code released under the UNLICENSE
+  https://modulifier.web-dev.tools/
+
+- "Typografier" by Thomas J Bradley
+  Code released under the UNLICENSE
+  https://typografier.web-dev.tools/
