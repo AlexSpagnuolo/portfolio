@@ -8,6 +8,23 @@ a {
   color: #231f20;
 }
 
+h1 {
+  text-shadow: .5px .5px 3px rgba(0, 0, 0, .3);
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+
+.drop-shadow {
+  transition: all .3s ease;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+}
+
+.image-drop-shadow {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, .3);
+}
+
 .rolelink {
   border-bottom: 1.5px solid #231f20;
   transition: all .3s ease;
@@ -80,6 +97,10 @@ a {
   fill: #fff;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .nameh1,
 .nameh2 {
   line-height: 100%;
@@ -87,7 +108,7 @@ a {
 
 .nameh2 {
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 2px #231f20;
+  -webkit-text-stroke: 1px #231f20;
   transform: scale(1, -1);
   transition: all .3s ease;
 }
@@ -98,15 +119,20 @@ a {
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
 }
 
-.caption {
-  bottom: -2em;
-  left: 3em;
+.whitetoplink {
+  -webkit-text-stroke: 2px #fff;
 }
 
-.projectname {
-  bottom: -1.6em;
-  left: 2em;
+.whitetoplink:hover,
+.whitetoplink:focus {
+  color: #fff;
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
+}
+
+.projectcovertext {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
 }
 
 .projectdetails {
@@ -119,12 +145,14 @@ a {
   transition-delay: .3s;
   display: none;
   visibility: hidden;
+  opacity: 0;
 }
 
 .gumprojectdetails,
 .gumheader,
 .gumfooter {
   background-color: #005B9C;
+  color: #fff;
 }
 
 .gum-odd-li {
@@ -135,6 +163,7 @@ a {
 .rozrossheader,
 .rozrossfooter {
   background-color: #5BB4B5;
+  color: #fff;
 }
 
 .rozross-odd-li {
@@ -145,6 +174,7 @@ a {
 .newmoonheader,
 .newmoonfooter {
   background-color: #7b6991;
+  color: #fff;
 }
 
 .parlourrebrand-odd-li {
@@ -155,20 +185,11 @@ a {
 .finalannualreportheader,
 .finalannualreportfooter {
   background-color: #ed7323;
+  color: #fff;
 }
 
 .finalreport-odd-li {
   background-color: #d3651d;
-}
-
-.lotbotprojectdetails,
-.lotbotheader,
-.lotbotfooter {
-  background-color: #F9C33D;
-}
-
-.lotbot-odd-li {
-  background-color: #FBB03B;
 }
 
 .portfoliopiece {
@@ -177,20 +198,16 @@ a {
 
 .portfoliopiece:hover,
 .portfoliopiece:focus {
-  transform: scale(0.97);
+  transform: scale(0.99);
+}
+
+.portfoliopiece:hover .drop-shadow {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
 }
 
 .portfoliopiece:hover .projectdetails {
   right: -21%;
-}
-
-@media only screen and (min-width: 60em) {
-
-  .projectdetails {
-    display: inline-block;
-    visibility: visible;
-  }
-
+  opacity: 1;
 }
 
 .imgleft {
@@ -210,7 +227,8 @@ a {
   -webkit-text-: 2px #231f20;
 }
 
-.i-btn {
+.i-btn,
+.i-logo {
     transition: all .3s ease;
 }
 
@@ -226,7 +244,7 @@ a {
 }
 
 .icons {
-  width: 50%;
+  max-width: 55%;
   margin: auto;
 }
 
@@ -240,4 +258,60 @@ a {
 .email:focus,
 .email:hover {
   border-bottom: 2px solid #b59e5f;
+}
+
+.prevbutton,
+.previcon,
+.nextbutton,
+.nexticon,
+.linkicon {
+  transition: all .3s ease;
+}
+
+.prevbutton:hover .previcon {
+  transform: translateX(-.5em);
+  opacity: 0;
+}
+
+.nextbutton:hover .nexticon {
+  transform: translateX(.5em);
+  opacity: 0;
+}
+
+.linkbutton:hover .linkicon {
+  transform: translate(.5em,-.5em);
+  opacity: 0;
+}
+
+footer,
+address {
+  font-weight: 500;
+  font-style: normal;
+}
+
+.footer-nav-link::after {
+  content: " ·"
+}
+
+@media only screen and (min-width: 38em) {
+
+  .icons {
+    max-width: 40%;
+  }
+
+  .nameh2 {
+    -webkit-text-stroke: 2px #231f20;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .icons {
+    max-width: 30%;
+  }
+
+  .projectdetails {
+    display: inline-block;
+    visibility: visible;
+  }
 }
