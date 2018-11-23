@@ -93,10 +93,12 @@ h1 {
   fill: #fff;
 }
 
-.text-white,
-.navlogowhitefill
-.whitefill {
-  color: #fff;
+.text-white {
+  fill: #fff;
+}
+
+.navlogowhitefill {
+    fill: #fff;
 }
 
 .nameh1,
