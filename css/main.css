@@ -64,11 +64,6 @@ h1 {
   padding-bottom: 3px;
 }
 
-.navlogo path {
-  color: #231f20;
-  transition: all .3s ease;
-}
-
 .current {
   border-bottom: 2px solid #b59e5f;
   padding-bottom: 3px;
@@ -80,25 +75,38 @@ h1 {
   padding-bottom: 0px;
 }
 
-.navlogo:hover path {
+.navlogo path {
+  transition: all .3s ease;
+}
+
+.navlogoblack {
   fill: #231f20;
 }
 
-.navlogowhite path {
-  color: #fff;
-  transition: all .3s ease;
+.navlogowhite {
+  fill: #fff;
+}
+
+.navlogowhiteblank {
+  fill: #fff;
+  fill-opacity: 0;
+}
+
+.navlogoblackblank {
+  fill: rgba(0, 0, 0, 0);
+}
+
+.navlogoblack:hover path {
+  fill: #231f20;
 }
 
 .navlogowhite:hover path {
   fill: #fff;
+  fill-opacity: 1;
 }
 
 .text-white {
-  fill: #fff;
-}
-
-.navlogowhitefill {
-    fill: #fff;
+  color: #fff;
 }
 
 .nameh1,
