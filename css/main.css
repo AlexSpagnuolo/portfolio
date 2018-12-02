@@ -216,6 +216,12 @@ blockquote {
   background-color: #d3651d;
 }
 
+.blackheader,
+.blackfooter {
+  background-color: #231f20;
+  color: #fff;
+}
+
 .portfoliopiece {
   transition: all .3s ease;
 }
@@ -317,6 +323,13 @@ address {
   content: " ·"
 }
 
+.focusfields {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 36em;
+  width: 100%;
+}
+
 @media only screen and (min-width: 38em) {
 
   .icons {
@@ -359,5 +372,9 @@ address {
   .projectdetails {
     display: inline-block;
     visibility: visible;
+  }
+
+  .focusfields {
+    max-width: 52em;
   }
 }
