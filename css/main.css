@@ -108,11 +108,13 @@ blockquote {
   fill: rgba(0, 0, 0, 0);
 }
 
-.navlogoblack:hover path {
+.navlogoblack:hover path,
+.navlogoblack:focus path {
   fill: #231f20;
 }
 
-.navlogowhite:hover path {
+.navlogowhite:hover path,
+.navlogowhite:focus path {
   fill: #fff;
   fill-opacity: 1;
 }
