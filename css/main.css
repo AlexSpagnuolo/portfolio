@@ -3,6 +3,11 @@ html {
   color: #231f20;
 }
 
+.html-black {
+  background-color: #231f20;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: #231f20;
