@@ -247,6 +247,11 @@ blockquote {
   opacity: 1;
 }
 
+.portfoliopiece:focus .projectdetails {
+  right: -21%;
+  opacity: 1;
+}
+
 .imgleft {
   padding-right: 5em
 }
