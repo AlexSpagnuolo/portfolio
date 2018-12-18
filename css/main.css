@@ -168,7 +168,10 @@ blockquote {
 .projectcovertext {
   top: 50%;
   transform: translateY(-50%);
-  left: 10%;
+  left: 5%;
+  max-width: 9rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .projectdetails {
@@ -350,6 +353,34 @@ address {
   margin-right: auto;
   max-width: 36em;
   width: 100%;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .projecttitle {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .projectdesc {
+    font-size: .8784rem;
+    line-height: 1.3rem;
+  }
+
+  .logospace {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .projectcovertext {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
