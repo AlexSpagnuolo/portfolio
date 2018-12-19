@@ -2,8 +2,8 @@
 
 # TEAM
 
-Designer & Developer: Alex Spagnuolo <a_spagnuolo@icloud.com>
-Site: http://aaspagnuolo.ca
+Designer & Developer: Alex Spagnuolo <alex@aaspagnuolo.ca>
+Site: https://aaspagnuolo.ca
 Instagram: https://instagram.com/aaspagnuolo
 Vimeo: https://vimeo.com/aaspagnuolo
 LinkedIn: https://www.linkedin.com/in/aaspagnuolo/

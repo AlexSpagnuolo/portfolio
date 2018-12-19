@@ -1,7 +1,6 @@
-# www.aaspagnuolo.ca
+# https://aaspagnuolo.ca
 
-
-Sitemap: http://aaspagnuolo.ca/sitemap.xml
+Sitemap: https://aaspagnuolo.ca/sitemap.xml
 
 User-Agent: *
 Disallow:
