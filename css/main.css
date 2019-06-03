@@ -1,6 +1,23 @@
 html {
   font-family: "Roboto Mono", monospace;
+  font-weight: 400;
   color: #231f20;
+}
+
+.modesto {
+  font-family: "modesto-initials", serif;
+}
+
+.modesto-outline {
+  font-family: "modesto-open-fat-outline", serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.gold-text {
+  color: #D6BC74
 }
 
 .html-black {
@@ -25,7 +42,7 @@ a {
 
 h1,
 blockquote {
-  text-shadow: .5px .5px 3px rgba(0, 0, 0, .3);
+  text-shadow: .5px .5px 3px rgba(0, 0, 0, .2);
 }
 
 .text-shadow {
@@ -52,6 +69,63 @@ blockquote {
   padding-bottom: 1px;
 }
 
+.text-left {
+  text-align: left;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+button:hover,
+button:focus {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+link,
+.selector {
+  text-decoration: none;
+  color: #231f20;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s ease;
+}
+
+.navlink:hover,
+.navlink:focus,
+.selector:hover,
+.selector:focus,
+.selector:active {
+  color: #231f20;
+  border-bottom: 2px solid #D6BC74;
+  padding-bottom: 3px;
+}
+
+.work-nav button.active {
+  color: #231f20;
+  border-bottom: 2px solid #D6BC74;
+  padding-bottom: 3px;
+  border-radius: 0;
+}
+
+.workcontent {
+  animation: fadeEffect .3s; /* Fading effect takes 1 second */
+}
+
+.navlink2 {
+  transition: all .3s ease;
+}
+
+.navlink2:hover,
+.navlink2:focus {
+  font-family: "modesto-initials", serif;
+}
+
 .navlink {
   text-decoration: none;
   color: #231f20;
@@ -62,9 +136,10 @@ blockquote {
 
 .navlink:hover,
 .navlink:focus {
-  border-bottom: 2px solid #b59e5f;
+  border-bottom: 2px solid #D6BC74;
   padding-bottom: 3px;
 }
+
 
 .navlinkwhite,
 .footerlinkwhite {
@@ -87,7 +162,7 @@ blockquote {
   padding-bottom: 3px;
 }
 .current {
-  border-bottom: 2px solid #b59e5f;
+  border-bottom: 2px solid #D6BC74;
   padding-bottom: 3px;
 }
 
@@ -129,8 +204,82 @@ blockquote {
   fill-opacity: 1;
 }
 
+.nav {
+  background-color: #fff;
+  color: #231f20;
+  display: none;
+}
+
+.nav-check {
+  position: absolute;
+  top: -10em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+}
+
+label.nav-label::before {
+  display: none;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
+}
+
+.logo-button {
+  position: absolute;
+  left: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
 .text-white {
   color: #fff;
+}
+
+.p-rule {
+  border-bottom: solid 2px #D6BC74;
+}
+
+.portrait {
+  background-color: #D6BC74;
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+  overflow: hidden;
+  margin: auto;
+  top: -75px;
+
+  border: solid 2px #D6BC74;
+  box-shadow: 0 0 0 4px #fff inset;
 }
 
 .nameh1,
@@ -187,9 +336,14 @@ blockquote {
   opacity: 0;
 }
 
-.aboutfooter {
-  background-color: #b59e5f;
+.aboutfooter,
+.gold {
+  background-color: #D6BC74;
   color: #fff;
+}
+
+.services li:before {
+  content: "\203A";
 }
 
 .gumprojectdetails,
@@ -289,7 +443,7 @@ blockquote {
 
 .i-btn:focus,
 .i-btn:hover {
-  transform: scale(.9);
+  color: #D6BC74;
 }
 
 .me {
@@ -307,12 +461,12 @@ blockquote {
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
   transition: border .3s ease;
-  color: #b59e5f;
+  color: #D6BC74;
 }
 
 .email:focus,
 .email:hover {
-  border-bottom: 2px solid #b59e5f;
+  border-bottom: 2px solid #D6BC74;
 }
 
 .prevbutton,
@@ -328,6 +482,61 @@ blockquote {
   opacity: 0;
 }
 
+.contact-container {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(214, 188, 116, .2);
+  margin: auto;
+}
+
+.contact-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #D6BC74;
+  top: -10px;
+  left: -10px;
+  z-index: 1;
+}
+
+.button-container-white {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+}
+
+.button-container-gold-nocenter {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: rgba(214, 188, 116, .2);
+}
+
+.button-inner-white {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #E5E5E5;
+  top: -5px;
+  left: -5px;
+  z-index: 1;
+  line-height: 50px;
+}
+
+.button-inner-gold {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #D6BC74;
+  top: -5px;
+  left: -5px;
+  z-index: 1;
+  line-height: 50px;
+}
+
 .nextbutton:hover .nexticon {
   transform: translateX(.5em);
   opacity: 0;
@@ -338,9 +547,69 @@ blockquote {
   opacity: 0;
 }
 
+.big-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70em;
+  width: 100%;
+}
+
+.big-wrapper-no-center {
+  max-width: 52em;
+  width: 100%;
+}
+
+.turqoise {
+  box-shadow: 7px 7px rgba(99, 188, 186, .2);
+}
+
+.red {
+  box-shadow: 7px 7px rgba(238, 51, 64, .2);
+}
+
+.blue {
+  box-shadow: 7px 7px rgba(22, 42, 83, .2);
+}
+
+.purple {
+  box-shadow: 7px 7px rgba(34, 28, 52, .2);
+}
+
+.orange {
+  box-shadow: 7px 7px rgba(237, 115, 35, .2);
+}
+
+.yellow {
+  box-shadow: 7px 7px rgba(254, 226, 113, .2);
+}
+
+.gold {
+  box-shadow: 7px 7px rgba(214, 188, 116, .2);
+}
+
+.dark-green {
+  box-shadow: 7px 7px rgba(46, 122, 115, .2);
+}
+
+.case-study:hover .case-study-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.case-study-hover {
+  cursor: pointer;
+  transition: all .3s ease;
+  visibility: hidden;
+  opacity: 0;
+  color: #fff;
+  background-color: #D6BC74;
+  height: 100%;
+  width: 100%;
+  box-shadow: 7px 7px rgba(0, 0, 0, .1);
+}
+
 footer,
 address {
-  font-weight: 500;
   font-style: normal;
 }
 
@@ -353,6 +622,17 @@ address {
   margin-right: auto;
   max-width: 36em;
   width: 100%;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  margin: 15px;
+  padding-bottom: 3px;
 }
 
 @media only screen and (min-width: 25em) {
@@ -413,6 +693,10 @@ address {
     -webkit-text-stroke: 2px #231f20;
   }
 
+  .contact-container {
+    width: 80%;
+  }
+
 
 }
 
@@ -429,5 +713,10 @@ address {
 
   .focusfields {
     max-width: 52em;
+  }
+
+  .maintitle {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
