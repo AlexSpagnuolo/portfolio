@@ -81,7 +81,8 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus,
+button:active {
   background-color: transparent;
   border: none;
   border-radius: 0;
@@ -98,6 +99,7 @@ link,
 
 .navlink:hover,
 .navlink:focus,
+.navlink:active,
 .selector:hover,
 .selector:focus,
 .selector:active {
@@ -122,7 +124,8 @@ link,
 }
 
 .navlink2:hover,
-.navlink2:focus {
+.navlink2:focus,
+.navlink2:active {
   font-family: "modesto-initials", serif;
 }
 
@@ -135,7 +138,8 @@ link,
 }
 
 .navlink:hover,
-.navlink:focus {
+.navlink:focus,
+.navlink:active {
   border-bottom: 2px solid #D6BC74;
   padding-bottom: 3px;
 }
@@ -151,7 +155,8 @@ link,
 }
 
 .navlinkwhite:hover,
-.navlinkwhite:focus {
+.navlinkwhite:focus
+.navlinkwhite:active {
   border-bottom: 2px solid #fff;
   padding-bottom: 3px;
 }
@@ -167,7 +172,8 @@ link,
 }
 
 .current:hover,
-.current:focus {
+.current:focus,
+.current:active {
   border-bottom: 3px solid rgba(0, 0, 0, 0);
   padding-bottom: 0px;
 }
@@ -194,12 +200,14 @@ link,
 }
 
 .navlogoblack:hover path,
-.navlogoblack:focus path {
+.navlogoblack:focus path,
+.navlogoblack:active path {
   fill: #231f20;
 }
 
 .navlogowhite:hover path,
-.navlogowhite:focus path {
+.navlogowhite:focus path,
+.navlogowhite:active path {
   fill: #fff;
   fill-opacity: 1;
 }
@@ -296,7 +304,8 @@ label.nav-label::before {
 }
 
 .blacktoplink:hover,
-.blacktoplink:focus {
+.blacktoplink:focus,
+.blacktoplink:active {
   color: #231f20;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
 }
@@ -309,7 +318,8 @@ label.nav-label::before {
 }
 
 .whitetoplink:hover,
-.whitetoplink:focus {
+.whitetoplink:focus,
+.whitetoplink:active {
   color: #fff;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
 }
@@ -401,7 +411,8 @@ label.nav-label::before {
 }
 
 .portfoliopiece:hover,
-.portfoliopiece:focus {
+.portfoliopiece:focus,
+.portfoliopiece:active {
   transform: scale(0.99);
 }
 
