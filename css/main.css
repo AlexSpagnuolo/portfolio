@@ -674,7 +674,8 @@ address {
   }
 
   .blacktoplink:hover,
-  .blacktoplink:focus {
+  .blacktoplink:focus,
+  .blacktoplink:active {
     color: #231f20;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
   }
@@ -684,7 +685,8 @@ address {
   }
 
   .whitetoplink:hover,
-  .whitetoplink:focus {
+  .whitetoplink:focus,
+  .whitetoplink:active {
     color: #fff;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
   }
