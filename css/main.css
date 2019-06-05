@@ -116,7 +116,7 @@ link,
 }
 
 .workcontent {
-  animation: fadeEffect .3s; /* Fading effect takes 1 second */
+  animation: fadeEffect .3s;
 }
 
 .navlink2 {
@@ -494,11 +494,18 @@ label.nav-label::before {
 }
 
 .contact-container {
-  height: 500px;
+  height: 400px;
   width: 100%;
   position: relative;
   background-color: rgba(214, 188, 116, .2);
   margin: auto;
+}
+
+@media only screen and (min-width: 25em) {
+  .contact-container {
+    height: 500px;
+  }
+
 }
 
 .contact-inner {
@@ -617,6 +624,7 @@ label.nav-label::before {
   height: 100%;
   width: 100%;
   box-shadow: 7px 7px rgba(0, 0, 0, .1);
+  overflow: auto;
 }
 
 footer,
