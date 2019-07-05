@@ -50,12 +50,7 @@ blockquote {
 }
 
 .drop-shadow {
-  transition: all .3s ease;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
-}
-
-.image-drop-shadow {
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, .3);
+  box-shadow: 7px 7px rgba(0, 0, 0, .1);
 }
 
 .rolelink {
@@ -234,6 +229,13 @@ link,
   position: absolute;
   right: 30px;
   top: 30px;
+  opacity: .5;
+  transition: all .3s ease;
+}
+
+.nav-label:hover,
+.nav-label:focus {
+  opacity: 1;
 }
 
 .nav-open,
@@ -260,6 +262,15 @@ label.nav-label::before {
 .logo-button {
   position: absolute;
   left: 0;
+  opacity: .5;
+  transition: all .3s ease;
+  left: 30px;
+  top: 30px;
+}
+
+.logo-button:focus,
+.logo-button:hover {
+  opacity: 1;
 }
 
 .header {
@@ -285,7 +296,6 @@ label.nav-label::before {
   overflow: hidden;
   margin: auto;
   top: -75px;
-
   border: solid 2px #D6BC74;
   box-shadow: 0 0 0 4px #fff inset;
 }
