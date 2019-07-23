@@ -4,6 +4,16 @@ html {
   color: #231f20;
 }
 
+.services-box {
+  border: 1.5px solid #fff;
+  box-shadow: 7px 7px rgba(0, 0, 0, .1);
+}
+
+.service-text {
+  background-color: #fff;
+  color: #231f20;
+}
+
 .modesto {
   font-family: "modesto-initials", serif;
 }
@@ -662,18 +672,6 @@ address {
   display: inline-block;
   margin: 15px;
   padding-bottom: 3px;
-}
-
-.services-box {
-  border: 1.5px solid #fff;
-  box-shadow: 7px 7px rgba(0, 0, 0, .1);
-
-}
-
-.service-text {
-  background-color: #fff;
-  color: #231f20;
-
 }
 
 @media only screen and (min-width: 25em) {
