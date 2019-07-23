@@ -667,11 +667,13 @@ address {
 .services-box {
   border: 1.5px solid #fff;
   box-shadow: 7px 7px rgba(0, 0, 0, .1);
+
 }
 
 .service-text {
   background-color: #fff;
   color: #231f20;
+
 }
 
 @media only screen and (min-width: 25em) {
