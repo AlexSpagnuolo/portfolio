@@ -89,6 +89,8 @@ blockquote {
 
 .landing-text {
   padding-top: 6rem;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .scroll {
