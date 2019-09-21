@@ -2,13 +2,6 @@ html {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   color: #231f20;
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  width: 100%;
-  height: 100%;
 }
 
 .services-box {
@@ -95,8 +88,11 @@ blockquote {
 }
 
 .landing-text {
+  padding-top: 7rem;
   margin-top: auto;
   margin-bottom: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .scroll {
