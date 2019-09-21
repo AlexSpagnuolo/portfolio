@@ -81,11 +81,17 @@ blockquote {
 .landing-intro {
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items: stretch;
+  align-content: stretch;
   width: 100vw;
   height: 95vh;
   position: relative;
+}
+
+.landing-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: auto;
 }
 
 .scroll {
