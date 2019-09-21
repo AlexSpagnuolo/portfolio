@@ -78,6 +78,37 @@ blockquote {
   text-align: left;
 }
 
+.landing-intro {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: .25rem;
+  height: 4rem;
+  border-radius: 60px 60px 0 0;
+  overflow: hidden;
+}
+
+.scroll-line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: .125rem;
+  height: 10rem;
+  background-color: #fff;
+  opacity: .5;
+  border-radius: 5px 5px 0 0;
+}
+
 button {
   background-color: transparent;
   border: none;
