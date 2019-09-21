@@ -83,7 +83,6 @@ blockquote {
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
-  width: 100vw;
   height: 95vh;
   position: relative;
 }
