@@ -37,6 +37,21 @@ navlogobottomclass: navlogoblackblank
   <a class="island scroll smooth-scroll" href="#work">
     <span class="scroll-line">
   </a>
+  <script>
+    $(document).ready(function(){
+      $(".smooth-scroll").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
 </section>
 
 <section id="work" class="pad-t-2 push-2">
@@ -277,5 +292,4 @@ navlogobottomclass: navlogoblackblank
 
   </div>
 </section>
-<script src="/js/main.js"></script>
 {% include contact.html %}

@@ -91,6 +91,7 @@ blockquote {
   padding-top: 6rem;
   margin-top: auto;
   margin-bottom: auto;
+  height: 95vh;
 }
 
 .scroll {
