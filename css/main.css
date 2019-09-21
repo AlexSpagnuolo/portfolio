@@ -79,13 +79,13 @@ blockquote {
 }
 
 .landing-intro {
-  width: 100vw;
-  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  position: relative;
+  width: 100vw;
+  height: 95vh;
+  padding-top: 6rem;
 }
 
 .scroll {
