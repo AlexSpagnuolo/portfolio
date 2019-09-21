@@ -88,11 +88,9 @@ blockquote {
 }
 
 .landing-text {
-  padding-top: 7rem;
+  display: block;
   margin-top: auto;
   margin-bottom: auto;
-  width: 100%;
-  height: 100%;
 }
 
 .scroll {
