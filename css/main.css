@@ -85,6 +85,9 @@ blockquote {
   align-content: center;
   width: 100vw;
   height: 95vh;
+}
+
+.landing-text {
   padding-top: 6rem;
 }
 
