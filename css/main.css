@@ -85,12 +85,7 @@ blockquote {
   align-content: center;
   width: 100vw;
   height: 95vh;
-}
-
-.landing-text {
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
+  position: relative;
 }
 
 .scroll {
@@ -99,7 +94,7 @@ blockquote {
   bottom: 0;
   transform: translateX(-50%);
   width: .25rem;
-  height: 4rem;
+  height: 3rem;
   border-radius: 60px 60px 0 0;
   overflow: hidden;
 }
