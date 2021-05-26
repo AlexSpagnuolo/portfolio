@@ -169,6 +169,24 @@ caption {
   margin: 0 0 1.3rem;
 }
 
+.section-header {
+    font-size: 160px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex:1 100%
+}
+
+@media (max-width: 600px) {
+    .section-header {
+        font-size:18vw
+    }
+}
+
 .tenamega {
   font-size: 2.0408rem;
   line-height: 2.925rem;
@@ -438,6 +456,10 @@ textarea {
 .gutter {
   padding-left: 1.3rem;
   padding-right: 1.3rem;
+}
+
+.gutter-left {
+  padding-left: 1.3rem;
 }
 
 .gutter-double,

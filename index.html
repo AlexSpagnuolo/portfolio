@@ -16,34 +16,48 @@ navlogobottomclass: navlogoblackblank
   <li><a href="#footer">Go to footer</a></li>
 </ul>
 
-<section>
-
-</section>
-
-<section class="gold landing-intro text-center push-2">
+<section class="landing-intro text-center push-2">
   <div class="gutter landing-text push-2">
-    <h1 class="modesto tena maintitle">To touch<br>somebody's heart<br>with design</h1>
-    <p class="nano push-2 max-length">I like to bring forward the authentic stories behind brand identities. I provide confident, concise, informed solutions and results with creative problem solving by getting to the root of the issue.</p>
-
-    <div class="button-container-white text-center">
-      <a itemprop="url" class="button-inner-white nextbutton" href="/about">
-        <span class="push-0 icon-label nano uppercase">About Me</span>
-        <i class="icon i-16 nexticon">
-          <svg><use xlink:href="/images/icons/icons.svg#next" /></svg>
-        </i>
-      </a>
-    </div>
+    <h1 class="modesto tena maintitle">Alex Spagnuolo</h1>
+    <p class="nano push-2 max-length">I design, solve problems and create memorable experiences.</p>
   </div>
   <a class="island scroll smooth-scroll" href="#work">
     <span class="scroll-line">
   </a>
 </section>
 
-<section id="work" class="pad-t-2 push-2">
+<section id="blog" class="pad-t-2 push-2 wrapper">
   <div class="text-center push-2">
-    <h2 class="uppercase push-1-2">Work</h2>
-      <ul class="list-group-inline nano scrollmenu push-2 work-nav">
-        <li class="gutter">
+    <h2 class="section-header text-left gutter-1-2 push-1-2">Blog.</h2>
+
+    <div id="All">
+      <div class="grid">
+
+        <div class="unit xs-1 s-1 m-1 l-1">
+          {% include blog-1.html %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1-2">
+          {% include periculum.html %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1-2">
+          {% include okkombucha.html %}
+        </div>
+
+        <div class="unit xs-1 s-1 m-1 l-1 push">
+          {% include newmoon.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section hidden id="work" class="pad-t-2 push-2 wrapper">
+  <div class="text-center push-2">
+    <h2 class="section-header text-left gutter-1-2 push-1-2">Blog.</h2>
+      <ul hidden class="list-group-inline nano scrollmenu push-2 work-nav">
+        <li class="gutter-left">
           <button class="selector uppercase" onclick="openCategory(event, 'All')" id="defaultOpen">All</button>
         </li>
         <span class="gold-text">·</span>
@@ -86,8 +100,7 @@ navlogobottomclass: navlogoblackblank
         </li>
       </ul>
 
-
-    <div id="All" class="workcontent gutter-1-2">
+    <div id="All" class="workcontent">
       <div class="grid">
 
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
@@ -141,7 +154,7 @@ navlogobottomclass: navlogoblackblank
       </div>
     </div>
 
-    <div id="Branding" class="workcontent gutter-1-2">
+    <div id="Branding" class="workcontent">
       <div class="grid">
 
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
@@ -171,7 +184,7 @@ navlogobottomclass: navlogoblackblank
       </div>
     </div>
 
-    <div id="Print" class="workcontent gutter-1-2">
+    <div id="Print" class="workcontent">
       <div class="grid">
 
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
@@ -201,7 +214,7 @@ navlogobottomclass: navlogoblackblank
       </div>
     </div>
 
-    <div id="Digital" class="workcontent gutter-1-2">
+    <div id="Digital" class="workcontent">
       <div class="grid">
 
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
@@ -227,7 +240,7 @@ navlogobottomclass: navlogoblackblank
       </div>
     </div>
 
-    <div id="Packaging" class="workcontent gutter-1-2">
+    <div id="Packaging" class="workcontent">
       <div class="grid">
 
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
@@ -237,7 +250,7 @@ navlogobottomclass: navlogoblackblank
       </div>
     </div>
 
-    <div id="Web" class="workcontent gutter-1-2">
+    <div id="Web" class="workcontent">
       <div class="grid">
 
         <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
