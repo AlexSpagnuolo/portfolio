@@ -655,6 +655,10 @@ label.nav-label::before {
   background-color: rgb(253, 240, 236);
 }
 
+.grid-item3 {
+  background-color: rgb(152, 190, 200);
+}
+
 .black {
   color: #333132;
 }
