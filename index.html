@@ -16,7 +16,7 @@ navlogobottomclass: navlogoblackblank
   <li><a href="#footer">Go to footer</a></li>
 </ul>
 
-<section class="landing-intro text-center push-2">
+<section class="landing-intro text-center push-0">
   <div class="gutter landing-text push-2">
     <h1 class="modesto tena maintitle">Alex Spagnuolo</h1>
     <p class="nano push-2 max-length">I design, solve problems and create memorable experiences.</p>
@@ -26,270 +26,29 @@ navlogobottomclass: navlogoblackblank
   </a>
 </section>
 
-<section id="blog" class="pad-t-2 push-2 wrapper">
+<section id="blog" class="pad-t-2 push-2 wrapper content-section">
   <div class="text-center push-2">
-    <h2 class="section-header text-left gutter-1-2 push-1-2">Blog.</h2>
+    <h2 class="section-header text-left push-0">Blog.</h2>
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% include blog-1.html %}
+      </div>
 
-    <div id="All">
-      <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include blog-2.html %}
+      </div>
 
-        <div class="unit xs-1 s-1 m-1 l-1">
-          {% include blog-1.html %}
-        </div>
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include blog-3.html %}
+      </div>
 
-        <div class="unit xs-1 s-1 m-1 l-1-2">
-          {% include periculum.html %}
-        </div>
-
-        <div class="unit xs-1 s-1 m-1 l-1-2">
-          {% include okkombucha.html %}
-        </div>
-
-        <div class="unit xs-1 s-1 m-1 l-1 push">
-          {% include newmoon.html %}
-        </div>
+      <div class="unit xs-1 s-1 m-1 l-1 push">
+        {% include read-all.html %}
       </div>
     </div>
   </div>
 </section>
 
-<section hidden id="work" class="pad-t-2 push-2 wrapper">
-  <div class="text-center push-2">
-    <h2 class="section-header text-left gutter-1-2 push-1-2">Blog.</h2>
-      <ul hidden class="list-group-inline nano scrollmenu push-2 work-nav">
-        <li class="gutter-left">
-          <button class="selector uppercase" onclick="openCategory(event, 'All')" id="defaultOpen">All</button>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="gutter">
-          <button class="selector uppercase" onclick="openCategory(event, 'Branding')">Branding</button>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="gutter">
-          <button class="selector uppercase" onclick="openCategory(event, 'Print')">Print</button>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="gutter">
-          <button class="selector uppercase" onclick="openCategory(event, 'Digital')">Digital</button>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="gutter">
-          <button class="selector uppercase" onclick="openCategory(event, 'Packaging')">Packaging</button>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="gutter">
-          <button class="selector uppercase" onclick="openCategory(event, 'Web')">Web</button>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="uppercase gutter">
-          <a title="Photography collage" itemprop="url" class="nextbutton navlink" href="/photography">
-            <span class="push-0 icon-label nano uppercase">Photography</span>
-            <i class="icon i-16 nexticon">
-              <svg><use xlink:href="/images/icons/icons.svg#next" /></svg>
-            </i>
-          </a>
-        </li>
-        <span class="gold-text">·</span>
-        <li class="uppercase gutter">
-          <a title="Vimeo" itemprop="url" class="linkbutton navlink" href="https://vimeo.com/aaspagnuolo/" rel="me" rel="external">
-            <span class="push-0 icon-label nano uppercase">Motion</span>
-            <i class="icon i-16 linkicon">
-              <svg><use xlink:href="/images/icons/icons.svg#link" /></svg>
-            </i>
-          </a>
-        </li>
-      </ul>
-
-    <div id="All" class="workcontent">
-      <div class="grid">
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include bex.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include periculum.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include okkombucha.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include newmoon.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include worldanimal.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include madonna.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include excel.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include truckinghr.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include rozross.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include micromacro.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include photography.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include motion.html %}
-        </div>
-
-      </div>
-    </div>
-
-    <div id="Branding" class="workcontent">
-      <div class="grid">
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include bex.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include periculum.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include newmoon.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include truckinghr.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include rozross.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include micromacro.html %}
-        </div>
-
-      </div>
-    </div>
-
-    <div id="Print" class="workcontent">
-      <div class="grid">
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include bex.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include okkombucha.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include newmoon.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include worldanimal.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include madonna.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include truckinghr.html %}
-        </div>
-
-      </div>
-    </div>
-
-    <div id="Digital" class="workcontent">
-      <div class="grid">
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include newmoon.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include periculum.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include truckinghr.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include photography.html %}
-        </div>
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include motion.html %}
-        </div>
-
-      </div>
-    </div>
-
-    <div id="Packaging" class="workcontent">
-      <div class="grid">
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include excel.html %}
-        </div>
-
-      </div>
-    </div>
-
-    <div id="Web" class="workcontent">
-      <div class="grid">
-
-        <div class="unit xs-1-2 s-1-2 m-1-2 l-1-3 gutter-1-2 push">
-          {% include rozross.html %}
-        </div>
-
-      </div>
-    </div>
-
-    <script>
-    function openCategory(evt, categoryName) {
-      // Declare all variables
-      var i, workcontent, selector;
-
-      // Get all elements with class="tabcontent" and hide them
-      workcontent = document.getElementsByClassName("workcontent");
-      for (i = 0; i < workcontent.length; i++) {
-        workcontent[i].style.display = "none";
-      }
-
-      // Get all elements with class="tablinks" and remove the class "active"
-      selector = document.getElementsByClassName("selector");
-      for (i = 0; i < selector.length; i++) {
-        selector[i].className = selector[i].className.replace(" active", "");
-      }
-
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(categoryName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    </script>
-
-    <script>
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-    </script>
-
-  </div>
-</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){

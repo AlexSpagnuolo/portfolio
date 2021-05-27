@@ -1,25 +1,22 @@
 html {
-  font-family: "Roboto Mono", monospace;
+  font-family: Gopher, sans-serif;
   font-weight: 400;
   color: #231f20;
+  background-color: #fefaf4;
 }
 
 .services-box {
-  border: 1.5px solid #fff;
+  border: 1.5px solid #fefaf4;
   box-shadow: 7px 7px rgba(0, 0, 0, .1);
 }
 
 .service-text {
-  background-color: #fff;
+  background-color: #fefaf4;
   color: #231f20;
 }
 
-.modesto {
-  font-family: "modesto-initials", serif;
-}
-
-.modesto-outline {
-  font-family: "modesto-open-fat-outline", serif;
+.modesto, h2 {
+  font-family: roc-grotesk-wide, sans-serif;
 }
 
 .uppercase {
@@ -32,17 +29,17 @@ html {
 
 .html-black {
   background-color: #231f20;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .html-grey {
   background-color: #464646;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .errorheader {
   background-color: #464646;
-  color: #fff;
+  color: #fefaf4;
 }
 
 a {
@@ -112,7 +109,7 @@ blockquote {
   transform: translateX(-50%);
   width: .125rem;
   height: 10rem;
-  background-color: #fff;
+  background-color: #fefaf4;
   opacity: .5;
   border-radius: 5px 5px 0 0;
 }
@@ -170,7 +167,7 @@ link,
 .navlink2:hover,
 .navlink2:focus,
 .navlink2:active {
-  font-family: "modesto-initials", serif;
+
 }
 
 .navlink {
@@ -192,7 +189,7 @@ link,
 .navlinkwhite,
 .footerlinkwhite {
   text-decoration: none;
-  color: #fff;
+  color: #fefaf4;
   padding-bottom: 1px;
   border-bottom: 2px solid transparent;
   transition: all .3s ease;
@@ -201,13 +198,13 @@ link,
 .navlinkwhite:hover,
 .navlinkwhite:focus
 .navlinkwhite:active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fefaf4;
   padding-bottom: 3px;
 }
 
 .footerlinkwhite:hover,
 .footerlinkwhite:focus {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fefaf4;
   padding-bottom: 3px;
 }
 .current {
@@ -231,11 +228,11 @@ link,
 }
 
 .navlogowhite {
-  fill: #fff;
+  fill: #fefaf4;
 }
 
 .navlogowhiteblank {
-  fill: #fff;
+  fill: #fefaf4;
   fill-opacity: 0;
 }
 
@@ -252,12 +249,12 @@ link,
 .navlogowhite:hover path,
 .navlogowhite:focus path,
 .navlogowhite:active path {
-  fill: #fff;
+  fill: #fefaf4;
   fill-opacity: 1;
 }
 
 .nav {
-  background-color: #fff;
+  background-color: #fefaf4;
   color: #231f20;
   display: none;
 }
@@ -329,7 +326,7 @@ label.nav-label::before {
 }
 
 .text-white {
-  color: #fff;
+  color: #fefaf4;
 }
 
 .p-rule {
@@ -370,7 +367,7 @@ label.nav-label::before {
 
 .whitetoplink {
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px #fefaf4;
   transform: scale(1, -1);
   transition: all .3s ease;
 }
@@ -378,7 +375,7 @@ label.nav-label::before {
 .whitetoplink:hover,
 .whitetoplink:focus,
 .whitetoplink:active {
-  color: #fff;
+  color: #fefaf4;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
 }
 
@@ -392,7 +389,7 @@ label.nav-label::before {
 }
 
 .projectdetails {
-  color: #fff;
+  color: #fefaf4;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
@@ -407,7 +404,7 @@ label.nav-label::before {
 .aboutfooter,
 .gold {
   background-color: #D6BC74;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .services li:before {
@@ -418,7 +415,7 @@ label.nav-label::before {
 .gumheader,
 .gumfooter {
   background-color: #005B9C;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .gum-odd-li {
@@ -429,7 +426,7 @@ label.nav-label::before {
 .rozrossheader,
 .rozrossfooter {
   background-color: #5BB4B5;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .rozross-odd-li {
@@ -440,7 +437,7 @@ label.nav-label::before {
 .newmoonheader,
 .newmoonfooter {
   background-color: #7b6991;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .parlourrebrand-odd-li {
@@ -451,7 +448,7 @@ label.nav-label::before {
 .finalannualreportheader,
 .finalannualreportfooter {
   background-color: #ed7323;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .finalreport-odd-li {
@@ -461,7 +458,7 @@ label.nav-label::before {
 .blackheader,
 .blackfooter {
   background-color: #231f20;
-  color: #fff;
+  color: #fefaf4;
 }
 
 .portfoliopiece {
@@ -580,7 +577,7 @@ label.nav-label::before {
   height: 50px;
   width: 200px;
   position: relative;
-  background-color: #fff;
+  background-color: #fefaf4;
   margin: auto;
 }
 
@@ -635,58 +632,81 @@ label.nav-label::before {
   width: 100%;
 }
 
-.turqoise {
-  box-shadow: 7px 7px rgba(99, 188, 186, .2);
-}
-
-.red {
-  box-shadow: 7px 7px rgba(238, 51, 64, .2);
-}
-
-.blue {
-  box-shadow: 7px 7px rgba(22, 42, 83, .2);
-}
-
-.purple {
-  box-shadow: 7px 7px rgba(34, 28, 52, .2);
-}
-
-.orange {
-  box-shadow: 7px 7px rgba(237, 115, 35, .2);
-}
-
-.yellow {
-  box-shadow: 7px 7px rgba(254, 226, 113, .2);
-}
-
-.gold {
-  box-shadow: 7px 7px rgba(214, 188, 116, .2);
-}
-
-.dark-green {
-  box-shadow: 7px 7px rgba(46, 122, 115, .2);
-}
-
 .case-study {
   min-height: 500px;
 }
 
-.case-study:hover .case-study-hover {
-  visibility: visible;
-  opacity: 1;
+.case-study:hover .grid-title {
+  transform:translate3D(0, -6px, 0)
+}
+
+.case-study:hover .grid-text {
+  transform:translate3D(0, 6px, 0)
+}
+
+.grid-title, .grid-text {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .case-study-hover {
-  cursor: pointer;
-  transition: all .3s ease;
-  visibility: hidden;
-  opacity: 0;
-  color: #fff;
-  background-color: #D6BC74;
-  min-height: 500px;
   width: 100%;
-  box-shadow: 7px 7px rgba(0, 0, 0, .1);
-  overflow: auto;
+}
+
+.grid-item1 {
+  background-color: rgb(59, 171, 135);
+}
+
+.grid-item2 {
+  background-color: rgb(253, 240, 236);
+}
+
+.black {
+  color: #333132;
+}
+
+.white {
+  color: #fefaf4;
+}
+
+.content-section {
+
+}
+
+.section-header {
+    font-size: 160px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex:1 100%
+}
+
+@media (max-width: 600px) {
+    .section-header {
+        font-size:18vw
+    }
+
+    .grid-item-header {
+        font-size: 9.5vmin;
+        max-width:80%
+    }
+}
+
+.grid-title {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.3em;
+    max-width: 680px;
+    margin: auto;
+}
+
+.grid-text {
+  line-height: 30px;
+  max-width: 500px;
+  margin: auto;
 }
 
 footer,
@@ -748,6 +768,11 @@ address {
     padding-right: 0;
   }
 
+  .content-section {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -768,13 +793,13 @@ address {
   }
 
   .whitetoplink {
-    -webkit-text-stroke: 2px #fff;
+    -webkit-text-stroke: 2px #fefaf4;
   }
 
   .whitetoplink:hover,
   .whitetoplink:focus,
   .whitetoplink:active {
-    color: #fff;
+    color: #fefaf4;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
   }
 
