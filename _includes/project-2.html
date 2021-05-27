@@ -1,0 +1,38 @@
+<div class="case-study grid-item5 relative">
+  <a href="https://vimeo.com/aaspagnuolo" class="text-center" itemprop="url">
+    <div class="white island case-study-hover absolute pin-c">
+      <div class="push">
+        <h3 class="ml6 grid-title">
+          <span class="text-wrapper">
+            <span class="letters">Motion Graphics</span>
+          </span>
+        </h3>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script type="text/javascript">
+          // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml6 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml6 .letter',
+            translateY: ["1.2em", 0],
+            translateZ: 0,
+            duration: 750,
+            delay: (el, i) => 50 * i
+          }).add({
+            targets: '.ml6',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });
+        </script>
+      </div>
+      <div class="push">
+        <img src="https://via.placeholder.com/150" alt="">
+      </div>
+      <p class="milli push-0 grid-text">Watch my collection of animations and visual effects that create emotion with motion.</p>
+    </div>
+  </a>
+</div>

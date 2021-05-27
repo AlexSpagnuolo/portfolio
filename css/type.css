@@ -296,6 +296,10 @@ select {
   margin-bottom: 2.6rem;
 }
 
+.push-4 {
+  margin-bottom: 5.2rem;
+}
+
 .push-three-quarters,
 .push-3-4 {
   margin-bottom: .975rem;
@@ -714,6 +718,10 @@ legend {
     margin-bottom: 2.8rem;
   }
 
+  .push-4 {
+    margin-bottom: 5.6rem;
+  }
+
   .push-three-quarters,
   .push-3-4 {
     margin-bottom: 1.05rem;
@@ -1130,6 +1138,10 @@ legend {
     margin-bottom: 3rem;
   }
 
+  .push-4 {
+    margin-bottom: 6rem;
+  }
+
   .push-three-quarters,
   .push-3-4 {
     margin-bottom: 1.125rem;
@@ -1544,6 +1556,10 @@ legend {
   .push-double,
   .push-2 {
     margin-bottom: 3rem;
+  }
+
+  .push-4 {
+    margin-bottom: 6rem;
   }
 
   .push-three-quarters,

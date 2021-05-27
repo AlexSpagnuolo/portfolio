@@ -11,6 +11,7 @@ navlogobottomclass: navlogoblackblank
 
 <ul class="skip-links">
   <li><a href="#nav">Go to top of website</a></li>
+  <li><a href="#blog">Go to blog section</a></li>
   <li><a href="#work">Go to work section</a></li>
   <li><a href="#contact">Go to contact</a></li>
   <li><a href="#footer">Go to footer</a></li>
@@ -18,7 +19,7 @@ navlogobottomclass: navlogoblackblank
 
 <section class="landing-intro text-center push-0">
   <div class="gutter landing-text push-2">
-    <h1 class="modesto tena maintitle">Alex Spagnuolo</h1>
+    <h1 class="modesto tena maintitle push-2">Alex Spagnuolo</h1>
     <p class="nano push-2 max-length">I design, solve problems and create memorable experiences.</p>
   </div>
   <a class="island scroll smooth-scroll" href="#work">
@@ -43,8 +44,63 @@ navlogobottomclass: navlogoblackblank
       </div>
 
       <div class="unit xs-1 s-1 m-1 l-1 push">
-        {% include micromacro.html %}
+        {% include blog-button.html %}
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="pad-t-2 push-2 big-wrapper content-section">
+  <div class="text-center push-2">
+    <h2 class="section-header text-left push-0">Projects.</h2>
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% include project-1.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include project-2.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include blog-3.html %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="pad-t-2 push-2 big-wrapper content-section">
+  <div class="text-center push-2">
+    <h2 class="section-header text-left push-0">Work.</h2>
+    <div class="grid">
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% include work-1.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include work-2.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include blog-3.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% include work-4.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include blog-2.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1-2">
+        {% include blog-3.html %}
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1">
+        {% include blog-1.html %}
+      </div>
+
     </div>
   </div>
 </section>
