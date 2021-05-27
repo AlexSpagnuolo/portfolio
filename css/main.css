@@ -647,6 +647,10 @@ label.nav-label::before {
   line-height: 1em;
 }
 
+.case-study-hover {
+  width: 100%;
+}
+
 .case-study {
   min-height: 570px;
 }
@@ -663,9 +667,7 @@ label.nav-label::before {
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.case-study-hover {
-  width: 100%;
-}
+
 
 .grid-item1 {
   background-color: rgb(59, 171, 135);
@@ -685,6 +687,10 @@ label.nav-label::before {
 
 .grid-item5 {
   background-color: rgb(34, 74, 84);
+}
+
+.smokeandsoy {
+  background-color: #e0505d;
 }
 
 .black {
