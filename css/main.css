@@ -81,7 +81,7 @@ blockquote {
   align-items: stretch;
   align-content: stretch;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -623,17 +623,12 @@ label.nav-label::before {
 .big-wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 70em;
   width: 100%;
-}
-
-.big-wrapper-no-center {
-  max-width: 52em;
-  width: 100%;
+  max-width: 1280px;
 }
 
 .case-study {
-  min-height: 500px;
+  min-height: 570px;
 }
 
 .case-study:hover .grid-title {
@@ -668,10 +663,6 @@ label.nav-label::before {
   color: #fefaf4;
 }
 
-.content-section {
-
-}
-
 .section-header {
     font-size: 160px;
     font-weight: 800;
@@ -681,7 +672,8 @@ label.nav-label::before {
     position: relative;
     line-height: 0.6em;
     pointer-events: none;
-    flex:1 100%
+    flex:1 100%;
+    transform:translate3D(0, 20px, 0)
 }
 
 @media (max-width: 600px) {
