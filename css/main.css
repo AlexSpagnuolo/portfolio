@@ -48,8 +48,10 @@ a {
 }
 
 h1,
-blockquote {
-  text-shadow: .5px .5px 3px rgba(0, 0, 0, .2);
+blockquote,
+h2,
+h3 {
+  text-shadow: .5px .5px 3px rgba(0, 0, 0, .1);
 }
 
 .text-shadow {
@@ -677,6 +679,10 @@ transform:translateX(-50%);
   width: 100%;
 }
 
+.blog-header {
+  min-height: 80vh;
+}
+
 .case-study {
   min-height: 570px;
   overflow: hidden;
@@ -733,8 +739,6 @@ transform:translateX(-50%);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-
-
 .grid-item1 {
   background-color: rgb(59, 171, 135);
 }
@@ -784,18 +788,28 @@ transform:translateX(-50%);
     line-height: 0.6em;
     pointer-events: none;
     flex:1 100%;
-    transform:translate3D(0, 20px, 0)
+    transform:translate3D(0, 20px, 0);
 }
 
 @media (max-width: 600px) {
     .section-header {
-        font-size:18vw
+        font-size: 18vw;
     }
 
     .grid-item-header {
         font-size: 9.5vmin;
-        max-width:80%
+        max-width: 80%;
     }
+
+    .text-wrapper {
+      font-size: 40px;
+    }
+}
+
+@media (max-width: 950px) {
+  .section-header-long {
+    font-size: 15vw;
+  }
 }
 
 .grid-title {
