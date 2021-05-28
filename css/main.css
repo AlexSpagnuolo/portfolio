@@ -1,7 +1,7 @@
 html {
   font-family: Gopher, sans-serif;
   font-weight: 400;
-  color: #231f20;
+  color: #333132;
   background-color: #fefaf4;
 }
 
@@ -12,7 +12,7 @@ html {
 
 .service-text {
   background-color: #fefaf4;
-  color: #231f20;
+  color: #333132;
 }
 
 .modesto, h2 {
@@ -28,7 +28,7 @@ html {
 }
 
 .html-black {
-  background-color: #231f20;
+  background-color: #333132;
   color: #fefaf4;
 }
 
@@ -44,7 +44,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #231f20;
+  color: #333132;
 }
 
 h1,
@@ -61,7 +61,7 @@ blockquote {
 }
 
 .rolelink {
-  border-bottom: 1.5px solid #231f20;
+  border-bottom: 1.5px solid #333132;
   transition: all .3s ease;
 }
 
@@ -132,7 +132,7 @@ button:active {
 link,
 .selector {
   text-decoration: none;
-  color: #231f20;
+  color: #333132;
   padding-bottom: 1px;
   border-bottom: 2px solid transparent;
   transition: all .3s ease;
@@ -144,13 +144,13 @@ link,
 .selector:hover,
 .selector:focus,
 .selector:active {
-  color: #231f20;
+  color: #333132;
   border-bottom: 2px solid #D6BC74;
   padding-bottom: 3px;
 }
 
 .work-nav button.active {
-  color: #231f20;
+  color: #333132;
   border-bottom: 2px solid #D6BC74;
   padding-bottom: 3px;
   border-radius: 0;
@@ -172,7 +172,7 @@ link,
 
 .navlink {
   text-decoration: none;
-  color: #231f20;
+  color: #333132;
   padding-bottom: 1px;
   border-bottom: 2px solid transparent;
   transition: all .3s ease;
@@ -224,7 +224,7 @@ link,
 }
 
 .navlogoblack {
-  fill: #231f20;
+  fill: #333132;
 }
 
 .navlogowhite {
@@ -243,7 +243,7 @@ link,
 .navlogoblack:hover path,
 .navlogoblack:focus path,
 .navlogoblack:active path {
-  fill: #231f20;
+  fill: #333132;
 }
 
 .navlogowhite:hover path,
@@ -255,7 +255,7 @@ link,
 
 .nav {
   background-color: #fefaf4;
-  color: #231f20;
+  color: #333132;
   display: none;
 }
 
@@ -353,7 +353,7 @@ label.nav-label::before {
 
 .blacktoplink {
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #231f20;
+  -webkit-text-stroke: 1px #333132;
   transform: scale(1, -1);
   transition: all .3s ease;
 }
@@ -361,7 +361,7 @@ label.nav-label::before {
 .blacktoplink:hover,
 .blacktoplink:focus,
 .blacktoplink:active {
-  color: #231f20;
+  color: #333132;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0);
 }
 
@@ -457,7 +457,7 @@ label.nav-label::before {
 
 .blackheader,
 .blackfooter {
-  background-color: #231f20;
+  background-color: #333132;
   color: #fefaf4;
 }
 
@@ -499,7 +499,7 @@ label.nav-label::before {
 
 .outline {
   color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #231f20;
+  -webkit-text-stroke: 1px #333132;
 }
 
 .i-btn,
@@ -653,6 +653,41 @@ label.nav-label::before {
 
 .case-study {
   min-height: 570px;
+  overflow: hidden;
+  flex: 1 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-item-bg {
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.grid-item-divider {
+    display: block;
+    position: relative;
+    height: 3px;
+    background-color: currentColor;
+    width: 60px;
+    right: 0;
+    margin: 60px auto 30px;
+    transform: scaleX(0.8);
+    transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.case-study:hover .grid-item-divider {
+    transform:scaleX(1) translate3D(0, 6px, 0)
+}
+
+.case-study:hover .grid-item-bg {
+  transform:scale3D(1.04, 1.04, 1)
 }
 
 .case-study:hover .grid-title {
@@ -663,7 +698,12 @@ label.nav-label::before {
   transform:translate3D(0, 6px, 0)
 }
 
-.grid-title, .grid-text {
+.case-study:hover .grid-item {
+  transform:translate3D(0, 4px, 0)
+}
+
+
+.grid-title, .grid-text, .grid-item {
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -687,6 +727,10 @@ label.nav-label::before {
 
 .grid-item5 {
   background-color: rgb(34, 74, 84);
+}
+
+.read-more {
+  color: rgb(38, 85, 93);
 }
 
 .smokeandsoy {
@@ -776,6 +820,76 @@ address {
     display: none;
 }
 
+.spinner {
+  width: 60px;
+  height: 60px;
+  background-color: none;
+  background-image: url(/images/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: auto;
+  -webkit-animation: sk-rotateplane 3s infinite ease-in-out;
+  animation: sk-rotateplane 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.grid-item-button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 17px 20px;
+    background-color: #333132;
+    color: #fefaf4;
+    font-size: 13px;
+    transform-origin: 0 0;
+    will-change: transform, opacity;
+    transform: scaleY(0) translateZ(0);
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.case-study:hover {
+  transform: scaleY(1) translateZ(0);
+  transition:transform 0.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (hover: none) {
+    .case-study:link .grid-item-button {
+        opacity: 0;
+    }
+}
+
+.grid-item-button-label {
+    transform: translateY(-15px);
+    transition: transform 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s, opacity 0.35s cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    display: block;
+    opacity: 0;
+}
+
+.case-study:hover .grid-item-button-label {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 @media only screen and (min-width: 25em) {
 
   .projecttitle {
@@ -816,13 +930,13 @@ address {
   }
 
   .blacktoplink {
-    -webkit-text-stroke: 2px #231f20;
+    -webkit-text-stroke: 2px #333132;
   }
 
   .blacktoplink:hover,
   .blacktoplink:focus,
   .blacktoplink:active {
-    color: #231f20;
+    color: #333132;
     -webkit-text-stroke: 2px rgba(0, 0, 0, 0);
   }
 
@@ -838,7 +952,7 @@ address {
   }
 
   .outline {
-    -webkit-text-stroke: 2px #231f20;
+    -webkit-text-stroke: 2px #333132;
   }
 
   .contact-container {
