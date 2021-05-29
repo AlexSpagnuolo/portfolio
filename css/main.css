@@ -166,61 +166,6 @@ link,
   animation: fadeEffect .3s;
 }
 
-.navlink2 {
-    display: inline-block;
-    padding: 27px 20px 30px;
-    text-decoration: none;
-    transition: color 0.25s ease-in-out;
-    transform:translateZ(0)
-    color: inherit;
-}
-
-.navlink2:hover {
-    color: rgb(128, 190, 206);
-}
-
-.navlink2:hover::after {
-    transform:scaleY(1)
-}
-
-.navlink2::after {
-    content: "";
-    background-color: #fefaf4;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: scaleY(0);
-    transform-origin: 0 100%;
-    transition: all 0.25s ease-in-out;
-    z-index: -1
-}
-
-@media all and (max-height: 720px) {
-
-  .navlink2 {
-        padding-top: 20px;
-        padding-bottom:20px
-    }
-}
-
-@media all and (max-height: 550px) {
-    .navlink2 {
-        padding-top: 15px;
-        padding-bottom:15px
-    }
-}
-
-@media all and (max-height: 450px) {
-    .navlink2 {
-        padding-top: 10px;
-        padding-bottom:10px
-    }
-}
-
-
-
 .navlink {
   text-decoration: none;
   color: #333132;
@@ -386,16 +331,15 @@ transform:translateX(-50%);
 }
 
 .portrait {
-  background-color: #D6BC74;
-  border-radius: 50%;
-  max-width: 150px;
-  max-height: 150px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  margin: auto;
-  top: -75px;
-  border: solid 2px #D6BC74;
-  box-shadow: 0 0 0 4px #fff inset;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
 
 .nameh1,
 .blacktoplink,
@@ -535,7 +479,8 @@ transform:translateX(-50%);
 }
 
 .i-btn,
-.i-logo {
+.i-logo,
+.i-footer {
     transition: all .3s ease;
 }
 
@@ -647,6 +592,10 @@ transform:translateX(-50%);
   opacity: 0;
 }
 
+.i-footer:hover {
+  color: rgb(128, 190, 206);
+}
+
 .linkbutton:hover .linkicon {
   transform: translate(.5em,-.5em);
   opacity: 0;
@@ -704,6 +653,18 @@ transform:translateX(-50%);
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.item-divider {
+    display: block;
+    position: relative;
+    height: 3px;
+    background-color: currentColor;
+    width: 60px;
+    right: 0;
+    margin: 60px 0 30px;
+    transform: scaleX(0.8);
+    transition:transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
 .grid-item-divider {
@@ -906,6 +867,10 @@ transform:translateX(-50%);
   margin: auto;
 }
 
+.footer-email {
+  line-height: 3rem;
+}
+
 footer,
 address {
   font-style: normal;
@@ -943,7 +908,7 @@ address {
   width: 60px;
   height: 60px;
   background-color: none;
-  background-image: url(/images/logo-white.png);
+  background-image: url("/images/logo-white.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
