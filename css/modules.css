@@ -647,7 +647,7 @@ ol {
 
 ol > li::before {
   float: left;
-  margin-left: -1.6em;
+  margin-left: -2.6em;
   width: 1.3em;
   counter-increment: ol-simple-numbers;
   content: counter(ol-simple-numbers);
