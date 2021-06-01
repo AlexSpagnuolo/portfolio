@@ -7,28 +7,23 @@
   </url>
 
   <url>
-    <loc>https://aaspagnuolo.ca/about/</loc>
+    <loc>https://aaspagnuolo.ca/blog</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://aaspagnuolo.ca/gum-packaging/</loc>
+    <loc>https://aaspagnuolo.ca/projects</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://aaspagnuolo.ca/roz-ross/</loc>
+    <loc>https://aaspagnuolo.ca/work</loc>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://aaspagnuolo.ca/parlour-rebrand/</loc>
+    <loc>https://aaspagnuolo.ca/about</loc>
+    <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://aaspagnuolo.ca/final-annual-report/</loc>
-  </url>
-
-  <url>
-    <loc>https://aaspagnuolo.ca/photography/</loc>
-  </url>
-
 
 </urlset>
