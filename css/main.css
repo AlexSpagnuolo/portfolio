@@ -327,7 +327,7 @@ transform:translateX(-50%);
 }
 
 .p-rule {
-  border-bottom: solid 2px #D6BC74;
+  border-bottom: solid 2px #e0dedc;
 }
 
 .portrait {
@@ -714,6 +714,10 @@ transform:translateX(-50%);
   background-color: rgb(152, 190, 200);
 }
 
+.madonna-bg {
+  background-color: #5062ac;
+}
+
 .grid-item4 {
   background-color: #e9c3b8;
 }
@@ -732,6 +736,9 @@ transform:translateX(-50%);
 
 .smokeandsoy {
   background-color: #e0505d;
+}
+.tent-cards-bg {
+  background-color: #bc5352;
 }
 
 .black {
