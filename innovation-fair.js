@@ -49,7 +49,7 @@ function previewFile()
         /* Pass meta data of file */
         metaData: {
             /* file name */
-            fileName: "alexspagnuolo-innovataionfair.pdf"
+            fileName: "alexspagnuolo-innovationfair.pdf"
         }
     }, viewerConfig);
 };
